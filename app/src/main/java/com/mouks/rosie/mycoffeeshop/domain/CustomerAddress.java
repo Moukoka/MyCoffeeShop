@@ -12,7 +12,7 @@ public class CustomerAddress implements Serializable {
     private String city;
     private  String country;
     private String postalCode;
-    private boolean addressName;
+    private String addressName;
 
     public CustomerAddress() {
     }
@@ -41,7 +41,7 @@ public class CustomerAddress implements Serializable {
         return postalCode;
     }
 
-    public boolean isAddressName() {
+    public String isAddressName() {
         return addressName;
     }
 
@@ -62,7 +62,7 @@ public class CustomerAddress implements Serializable {
         private String city;
         private  String country;
         private String postalCode;
-        private boolean addressName;
+        private String addressName;
 
         public Builder id(Long value){
             this.id=value;
@@ -92,7 +92,7 @@ public class CustomerAddress implements Serializable {
             this.postalCode=value;
             return this;
         }
-        public Builder addressName(boolean value){
+        public Builder addressName(String value){
             this.addressName=value;
             return this;
         }

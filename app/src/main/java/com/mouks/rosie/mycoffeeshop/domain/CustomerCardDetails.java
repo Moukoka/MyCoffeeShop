@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class CustomerCardDetails implements Serializable {
     private Long cardId;
     private String cardType;
-    private int expirationMonnth;
+    private int expirationMonth;
     private int expirationYear;
     private String bankName;
 
@@ -24,7 +24,7 @@ public class CustomerCardDetails implements Serializable {
     }
 
     public int getExpirationMonnth() {
-        return expirationMonnth;
+        return expirationMonth;
     }
 
     public int getExpirationYear() {
@@ -38,7 +38,7 @@ public class CustomerCardDetails implements Serializable {
     public CustomerCardDetails(Builder builder) {
         this.cardId = builder.cardId;
         this.cardType = builder.cardType;
-        this.expirationMonnth = builder.expirationMonnth;
+        this.expirationMonth = builder.expirationMonth;
         this.expirationYear = builder.expirationYear;
         this.bankName = builder.bankName;
     }
@@ -46,7 +46,7 @@ public class CustomerCardDetails implements Serializable {
     public static class Builder{
         private Long cardId;
         private String cardType;
-        private int expirationMonnth;
+        private int expirationMonth;
         private int expirationYear;
         private String bankName;
 
@@ -61,7 +61,7 @@ public class CustomerCardDetails implements Serializable {
         }
 
         public Builder expMonth(int value){
-            this.expirationMonnth=value;
+            this.expirationMonth=value;
             return this;
         }
 
@@ -78,7 +78,7 @@ public class CustomerCardDetails implements Serializable {
         public Builder copy(CustomerCardDetails value){
             this.cardId=value.cardId;
             this.cardType= value.cardType;
-            this.expirationMonnth=value.expirationMonnth;
+            this.expirationMonth=value.expirationMonth;
             this.expirationYear = value.expirationYear;
             this.bankName= value.bankName;
 
